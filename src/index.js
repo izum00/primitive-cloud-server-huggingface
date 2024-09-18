@@ -3,7 +3,7 @@ const parseArgs = require('minimist')
 const startServer = require('./server.js')
 
 const {
-  port = 3000,
+  port = 7860,
   lock,
   'per-message-deflate': perMessageDeflate,
   help
@@ -19,7 +19,7 @@ const {
 
 if (help) {
   console.log('npm start -- [OPTIONS]')
-  console.log('--port=<port> (-p <port>)\n\tSet the port for the server. (Default 3000)')
+  console.log('--port=<port> (-p <port>)\n\tSet the port for the server. (Default 7860)')
   console.log('--lock (-l)\n\tDisables the ability to rename and delete cloud variables. (Enabled by default)')
   console.log('--per-message-deflate (-D)\n\tEnable permessage-deflate compression, which has a slight impact on performance (Disabled by default)')
   console.log('--help (-h)\n\tDisplay help')
